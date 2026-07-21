@@ -1,18 +1,62 @@
+
+Name		
+cwarrell18
+cwarrell18
+Update index.html
+5eb22c2
+ · 
+2 minutes ago
+imagens
+Rename Perus.jpeg to imagens/Perus.jpeg
+40 minutes ago
+images
+Rename Suínos.jpeg to Porcos.jpeg
+34 minutes ago
+README.md
+Initial commit
+2 hours ago
+Tartarugas.jpeg
+Rename images/IMG_1179.jpeg to Tartarugas.jpeg
+48 minutes ago
+index.html
+<div class="card">
+<img src="images/Coelhos.jpeg">
+<h3>Coelhos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Chinchilas.jpeg">
+<h3>Chinchilas</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Tartarugas.jpeg">
+<h3>Tartarugas</h3>
+</div>
+
+
 </div>
 
 </div>
 
 
 
-<!-- IMAGEM AMPLIADA -->
+<!-- JANELA DE IMAGEM AMPLIADA -->
+
 
 <div class="modal" id="modal">
 
+
 <span class="fechar" id="fechar">&times;</span>
+
 
 <img id="imagemGrande">
 
+
 </div>
+
 
 
 
@@ -23,6 +67,7 @@ Santuário SOS Animal ❤️
 </p>
 
 </footer>
+
 
 
 
@@ -42,16 +87,16 @@ const fechar = document.getElementById("fechar");
 imagens.forEach(imagem => {
 
 
-imagem.onclick = function(){
+    imagem.onclick = function(){
 
 
-modal.style.display="flex";
+        modal.style.display="flex";
 
 
-imagemGrande.src=this.src;
+        imagemGrande.src=this.src;
 
 
-}
+    }
 
 
 });
@@ -61,116 +106,29 @@ imagemGrande.src=this.src;
 fechar.onclick=function(){
 
 
-modal.style.display="none";
+    modal.style.display="none";
 
 
-}
+};
 
 
 
 modal.onclick=function(e){
 
 
-if(e.target === modal){
+    if(e.target === modal){
 
-modal.style.display="none";
+        modal.style.display="none";
 
-}
-
-
-}
-
-
-</script>
-
-
-</body>
-
-</html>
-</div>
-
-</div>
-
-
-
-<!-- IMAGEM AMPLIADA -->
-
-<div class="modal" id="modal">
-
-<span class="fechar" id="fechar">&times;</span>
-
-<img id="imagemGrande">
-
-</div>
-
-
-
-<footer>
-
-<p>
-Santuário SOS Animal ❤️
-</p>
-
-</footer>
-
-
-
-<script>
-
-
-const imagens = document.querySelectorAll(".card img");
-
-const modal = document.getElementById("modal");
-
-const imagemGrande = document.getElementById("imagemGrande");
-
-const fechar = document.getElementById("fechar");
-
-
-
-imagens.forEach(imagem => {
-
-
-imagem.onclick = function(){
-
-
-modal.style.display = "flex";
-
-
-imagemGrande.src = this.src;
-
-
-}
-
-
-});
-
-
-
-fechar.onclick = function(){
-
-
-modal.style.display = "none";
+    }
 
 
 };
 
 
 
-modal.onclick = function(e){
-
-
-if(e.target === modal){
-
-modal.style.display = "none";
-
-}
-
-
-};
-
-
 </script>
+
 
 
 </body>
