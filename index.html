@@ -1,24 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
 
-Name		
-cwarrell18
-cwarrell18
-Update index.html
-5eb22c2
- · 
-2 minutes ago
-imagens
-Rename Perus.jpeg to imagens/Perus.jpeg
-40 minutes ago
-images
-Rename Suínos.jpeg to Porcos.jpeg
-34 minutes ago
-README.md
-Initial commit
-2 hours ago
-Tartarugas.jpeg
-Rename images/IMG_1179.jpeg to Tartarugas.jpeg
-48 minutes ago
-index.html
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Santuário SOS Animal</title>
+
+<style>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+
+body {
+
+    background:#f5f1e8;
+    color:#333;
+
+}
+
+
+
+/* CABEÇALHO */
+
+header {
+
+    height:420px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("images/Header.jpeg");
+
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+header img {
+
+    max-width:280px;
+    max-height:130px;
+
+    object-fit:contain;
+
+    margin-bottom:25px;
+
+}
+
+
+
+header h1 {
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+header p {
+
+    color:white;
+
+    font-size:20px;
+
+    max-width:600px;
+
+}
+
+
+
+/* CONTEÚDO */
+
+
+.container {
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+}
+
+
+
+.container h2 {
+
+    text-align:center;
+
+    color:#426b45;
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* CARTÕES */
+
+
+.animais {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    text-align:center;
+
+}
+
+
+
+.card img {
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+}
+
+
+
+.card h3 {
+
+    padding:20px;
+
+    color:#426b45;
+
+    font-size:22px;
+
+}
+
+
+
+/* MODAL */
+
+
+.modal {
+
+    display:none;
+
+    position:fixed;
+
+    z-index:10;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.85);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.modal img {
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:15px;
+
+}
+
+
+
+.fechar {
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* RODAPÉ */
+
+
+footer {
+
+    background:#426b45;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* TELEMÓVEL */
+
+
+@media(max-width:600px){
+
+header {
+
+    height:350px;
+
+}
+
+
+header h1 {
+
+    font-size:30px;
+
+}
+
+
+header p {
+
+    font-size:16px;
+
+}
+
+
+.card img {
+
+    height:180px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="images/Logomaior.png" alt="SOS Animal">
+
+
+<h1>Santuário SOS Animal</h1>
+
+
+<p>
+Conheça os animais que vivem connosco e descubra as suas histórias.
+</p>
+
+
+</header>
+
+
+
+<div class="container">
+
+
+<h2>Os nossos animais</h2>
+
+
+<div class="animais">
+
+
+<div class="card">
+<img src="images/Equídeos.jpeg">
+<h3>Equídeos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Bovinos.jpeg">
+<h3>Bovinos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Cabras.jpeg">
+<h3>Caprinos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Ovelhas.jpeg">
+<h3>Ovinos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Porcos.jpeg">
+<h3>Suínos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Cães.jpeg">
+<h3>Cães</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Gatos.jpeg">
+<h3>Gatos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Galinhas.png">
+<h3>Aves</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Patos.jpeg">
+<h3>Patos</h3>
+</div>
+
+
+<div class="card">
+<img src="images/Perus.jpeg">
+<h3>Perus</h3>
+</div>
 <div class="card">
 <img src="images/Coelhos.jpeg">
 <h3>Coelhos</h3>
